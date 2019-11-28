@@ -1,0 +1,29 @@
+\documentclass[fullpage]{article}
+\begin{document}
+\begin{equation}
+net\, work\, per\, unit\, mass = c_p [(T_{CombustorExit}-T_{CompressorExit}) + (T_{Inlet}-T_{Exhaust})]
+\end{equation}
+\begin{equation}
+net\,work\,per\,unit\,mass = q_1 + q_2
+\end{equation}
+where $q_1,q_2$ are the heats received \textbf{by} the system in the combustor and the exhaust respectively. ($q_2$ is negative)
+\begin{equation}
+\eta = \frac{net\,work}{heat\,in} = \frac{q_1 + q_2}{q_1} = 1-\frac{T_{inlet}(\frac{T_{exhaust}}{T_{inlet}}-1)}{T_{compressorExit}(\frac{T_{combustorExit}}{T_{compressorExit}}-1)}
+\end{equation}
+Exhaust $\rightarrow$ inlet and compressorExit $\rightarrow$ combustorExit are isobaric processes, and the rest of the cycle is adiabatic and isentropic, so:
+\begin{equation}
+\frac{P_{exhaust}}{P_{inlet}} = \frac{P_{combustorExit}}{P_{compressorExit}}\;and\; \frac{T_{exhaust}}{T_{inlet}} = \frac{T_{combustorExit}}{T_{compressorExit}}
+\end{equation}
+so
+\begin{equation}
+\eta_B = 1 - \frac{T_{inlet}}{T_{compressorExit}}
+\end{equation}
+Using that the temperature rise in the compressor is
+\begin{equation}
+\frac{T_{compressorExit}}{T_{inlet}} = 1 + \frac{\gamma -1}{2}M_0^2
+\end{equation}
+where $M_0$ is the Mach number
+\begin{equation}
+\eta = \frac{[\frac{\gamma -1}{2}]M_0^2}{1+[\frac{\gamma -1}{2}]M_0^2}
+\end{equation}
+\end{document}
